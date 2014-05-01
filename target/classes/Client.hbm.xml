@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Client" table="client" catalog="projet_pizza">
+        <id name="clientId" type="java.lang.Integer" column="client_id">
+            <generator class="increment"/>
+        </id>
+        <property name="clientName" type="string" column="client_name" length="80" not-null="true" unique="false" />
+    </class>
+</hibernate-mapping>
